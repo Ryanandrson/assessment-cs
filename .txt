@@ -1,0 +1,12 @@
+		Size:					doublerAppend			     doublerInsert
+tinyArray	                       61.5 μs	                   20.25 μs
+smallArray	                        94 μs	                   38.75 μs
+mediumArray	                     109.416 μs	                  128.959 μs
+largeArray	                     429.459 μs	                  6.363542 ms
+extraLargeArray	                  4.5595 ms	                 774.76275 ms
+
+
+
+Because the unshift() method adds one or more elements to the beginning of an array and returns 
+the new length of the array it ends up having more steps causing a slower runtime and therefore
+it does not scale as well as the push method.
